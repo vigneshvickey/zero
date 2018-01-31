@@ -1,0 +1,15 @@
+.navbar-default{
+	background-color: rgba(0,0,0,0)!important;
+	     border-color: rgba(0,0,0,0)!important;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff!important;
+    font-size: 17px;
+}
+.nav>li{
+	padding-top: 19px;
+}
+.navbar-fixed-top.scrolled {
+  background-color: #000 !important;
+  transition: background-color 2s linear;
+}
