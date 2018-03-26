@@ -1,11 +1,21 @@
 /*header*/
+.header{
+    position: relative;
+    z-index: 99999;
+}
+
+.logo{
+    position: absolute;
+    width: 150px;
+    top: -30px;
+}
 .header .event_video:after{
 content: "";
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    bottom: -96px;
+    bottom:     0px;
     background: rgba(0,0,0,.5);
   
 }
@@ -114,11 +124,11 @@ content: "";
 .event_section{
     overflow: hidden;
     position: relative;
+    height: 150px;
 }
    .event_section img{
     box-shadow: 1px 1px 25px black;
     margin: 12px;
-    filter: grayscale(10);
     cursor: pointer;
 }
    .event_section p{
@@ -140,7 +150,7 @@ content: "";
     transform: translateY(12em);
 
     }
-.event_section img:hover{
+/*.event_section img:hover{
 filter: grayscale(0);
 
 }
@@ -148,7 +158,7 @@ filter: grayscale(0);
       transform: translateY(0em);
     height: 300px;
  
-}
+}*/
 .section4:after{
 content: "";
     position: absolute;
@@ -169,7 +179,7 @@ content: "";
 
      padding: 108px 50px;
     position: relative;
-    z-index: 99999;
+    z-index: 2;
 }
 .sec-form input{
         background: transparent;
@@ -216,4 +226,235 @@ outline: none;
 .rights{
     position: relative;
     z-index: 9999;
+}
+
+.test{
+    padding: 100px 0px;
+    background-image: url(../images/logo.png);
+    color: #ffffff;
+    position: relative;
+        background-position: right;
+    background-size: 22%;
+    background-repeat: no-repeat;
+    background-color: #000000;
+
+}
+.test:before{
+
+       content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 10%;
+    bottom: 0;
+    background-color: #e0ae2b;
+  
+
+}
+.test .fa{
+     color: #ffffff;
+
+}
+
+#social{
+    padding : 20px 0px;
+}
+#social h1{
+    margin-bottom: 20px;
+}
+/*testmonial*/
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+.carousel{
+    z-index: 999;
+}
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/*?end of testimonial*/
+
+/* carousel */
+.media-carousel 
+{
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+  margin-top: 30px;
+}
+/* Previous button  */
+.media-carousel .carousel-control.left 
+{
+  left: -12px;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Next button  */
+.media-carousel .carousel-control.right 
+{
+  right: -12px !important;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+.media-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+.media-carousel img
+{
+  width: 250px;
+  height: auto;
+}
+/* End carousel */
+
+.mob-bars{
+    position: relative;
+    top: 20px;
+        background: black!important;
+    border-color: #ffd700!important;
+    color: white!important;
+}
+.gallery {
+    position: relative;
+}
+.gallery h1{
+
+margin-top: 20px;
+margin-bottom: 50px;
+    }
+
+.gallery .img{
+    width: 184px;
+    height: 200px;
+    overflow: hidden;
+    display: inline-block;
+}
+.gallery img:after{
+content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0px;
+    background: rgba(0,0,0,.5);
+  
 }

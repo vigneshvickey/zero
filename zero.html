@@ -14,57 +14,60 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" type="images/png" href="images/logo.png">
   </head>
-  <body>
+
+  <body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 <section class="header">
     <nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
   <!-- top nav -->
   <!-- down nav -->
-  <nav class="navbar navbar-down hidden-xs">
+  <nav class="navbar navbar-down">
     <div class="container">
       <div class="flex-container">  
          <div class="navbar-header flex-item">
-          <div class="navbar-brand" href="#"><a href=""><img src="images/logo.png" style="    width: 77px;
-    border-top: 4px solid #e2af20;
-    border-bottom: 4px solid #e2af20;"></a></div>
+          <div class="navbar-brand" href="#"><a href=""><img src="images/logo.png" class="logo"></a></div>
         </div>
         <ul class="nav navbar-nav flex-item hidden-xs  pull-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">What we do</a></li> 
-          <li><a href="#">About us</a></li> 
-           <li><a href="#">Contact us</a></li> 
+          <li><a href="#home">Home</a></li>
+          <li><a href="#who">Who we are</a></li>
+          <li><a href="#what">What we do</a></li> 
+          <li><a href="#testimonial">Testimonial</a></li> 
+          <li><a href="#social">Social</a></li> 
+           <li><a href="#contact">Contact us</a></li> 
         </ul>
         <!-- dropdown only moblie -->
-          <div class="dropdown visible-xs pull-right">
-            <button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
-              <span class="fa fa-align-justify"></span> 
+          <div class="dropdown visible-xs pull-right mobile-view">
+            <button class="btn btn-default dropdown-toggle mob-bars" type="button" id="dropdownmenu" data-toggle="dropdown">
+              <i class="fa fa-bars"></i> 
             </button>
             <ul class="dropdown-menu">
-                   <li><a href="#">Home</a></li>
-          <li><a href="#">What we do</a></li> 
-          <li><a href="#">About us</a></li> 
-           <li><a href="#">Contact us</a></li> 
+                   <li><a href="#home">Home</a></li>
+          <li><a href="#who">Who we are</a></li>
+          <li><a href="#what">What we do</a></li> 
+          <li><a href="#testimonial">Testimonial</a></li> 
+          <li><a href="#social">Social</a></li> 
+           <li><a href="#contact">Contact us</a></li>  
             </ul>
           </div>
         </div>  
       </div>
     </nav>
   </nav>
-    <div class="event_video" > 
+    <div class="event_video" id="home"> 
         <video id="homevideo" width="100%" loop autoplay muted> 
             <source id="ss" src="videos/video2.mp4" type="video/mp4"></video> 
 
         </div>
     </section>
-<section class="section2">
+<section class="section2" id="who">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="col-lg-7">
+                <div class="col-md-7 col-lg-7">
 
                     <div class="section2_sub">
 
                     <h1 style="color: #e2af20;">WE ARE</h1>
-                    <h1 >CREATIVE</h1>
+                    <h1 >ARTISTIC</h1>
                     <span class="border">  &nbsp;</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper vitae velit at facilisis. Suspendisse a massa elit. Nulla cursus tempus augue ac varius. Nam porta congue sapien, id euismod mauris sollicitudin nec. Nam sem elit, pellentesque ac mi dignissim, ullamcorper tristique ex. Curabitur et placerat augue, ac euismod sem. Ut elit tellus, pulvinar lobortis lorem et, aliquam semper ligula. Vestibulum mollis felis a enim bibendum posuere nec in sapien. Nullam vel odio non neque dignissim hendrerit. Donec a tempor mi, in rhoncus elit. Donec ac dolor non ipsum imperdiet dignissim non non libero. Nulla quis nulla vel magna consequat interdum in at tortor. Cras in efficitur dui, vitae eleifend nibh. Nullam ac libero ut mauris elementum sodales ut quis eros. Pellentesque condimentum faucibus tortor, sit amet consequat purus varius eget.</p>
                 </div>
@@ -73,7 +76,7 @@
                             
                         </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-md-5 col-lg-5">
                       <div class="hide_text2">
                         <h1>CONNECTING THINGS</h1>
                             
@@ -86,55 +89,47 @@
         </div>
     </div> 
 </section>
-<section class="section3">
+<section class="section3" id="what">
         <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="col-lg-4">
+                <div class="col-md-4 col-lg-4">
 
                     <div class="section3_sub">
 
                     <h1 style="color: #e2af20;">WHAT</h1>
-                    <h1 >WE DO</h1>
+                    <h1 >WE DO</h1> 
                     <h1></h1>
-                    <p>
-Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit. Cras at augue id arcu 
-vestibulum consequat. Aenean a dignissim 
-erat. Phasellus ut 
-consequat orci, iaculis accumsan urna. </p>
+                    <p><b>AN ARTISTIC</b> is a word for all, but for us its a feeling to work develop our carrer skillsets and supportive operation in the brand engineering field. we are the artistic team to support the brand in all promotional possibilites (i.e) branding and corporate identity designing,sigange,promotional events, photography, stage designs, marketing and printing category. we arw specialized in customised ideas and design creations</p>
                 </div>
                 </div>
-                <div class="col-lg-8">  
+                <div class="col-md-7 col-lg-8">  
                     <div class="section3_sub2">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-md-6 col-lg-6">
                                 <div class="service">
                                     <span><img src="images/branding.png" width="35px" alt="branding"></span>
                                     <br>
                                  <h3 >Branding</h3>
                                  <h4></h4>
-                                 <p>Aenean a dignissim erat. Phasellus ut consequat orci,
-iaculis accumsan urna.Aenean dignissim tempus euismod.</p>
+                                 <p> The process involved in creating a unique name and image for a product in the consumers' mind, mainly through advertising campaigns with a consistent theme</p>
                             </div>
                               <div class="service">
                                     <span><img src="images/sign.png" width="35px" alt="sign"></span>
                                     <br>
                                  <h3 >Signage</h3>
                                  <h4></h4>
-                                 <p>Aenean a dignissim erat. Phasellus ut consequat orci,
-iaculis accumsan urna.Aenean dignissim tempus euismod.</p>
+                                 <p>Signage is the design or use of signs and symbols to communicate a message to a specific group, usually for the purpose of marketing or a kind of advocacy. A signage also means signs collectively or being considered as a group</p>
                             </div>
                               <div class="service">
                                     <span><img src="images/photo.png" width="35px" alt="photo"></span>
                                     <br>
                                  <h3 >Photography</h3>
                                  <h4></h4>
-                                 <p>Aenean a dignissim erat. Phasellus ut consequat orci,
-iaculis accumsan urna.Aenean dignissim tempus euismod.</p>
+                                 <p>Photography is the science, art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.</p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6 col-lg-6">
                               <div class="service">
                                     <span><img src="images/events.png" width="35px" alt="event"></span>
                                     <br>
@@ -156,8 +151,7 @@ iaculis accumsan urna.Aenean dignissim tempus euismod.</p>
                                     <br>
                                  <h3 >Stage Designs</h3>
                                  <h4></h4>
-                                 <p>Aenean a dignissim erat. Phasellus ut consequat orci,
-iaculis accumsan urna.Aenean dignissim tempus euismod.</p>
+                                 <p>The art of creating the visual image of a stage production through sets, costumes, lighting, and stage mechanisms. </p>
                             </div>
 
                         </div>                            
@@ -174,68 +168,227 @@ iaculis accumsan urna.Aenean dignissim tempus euismod.</p>
 </section>
 <section class="section4">
         <div class="container">
-        <div class="row">
-             <div class="col-lg-12">
-                <div class="col-lg-4">
+    <div class='row'>
+    <div class='col-md-12'>
+      <div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner">
+          <div class="item  active">
+            <div class="row">
+          <div class="col-lg-12">
+                <div class="col-md-4 col-lg-4">
 
                     <div class="section3_sub">
 
                     <h1 style="color: #e2af20;">RECENT</h1>
                     <h1 >EVENTS</h1>
                     <h1></h1>
-                    <p>
-Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit. Cras at augue id arcu 
-vestibulum consequat. Aenean a dignissim 
-erat. Phasellus ut 
-consequat orci, iaculis accumsan urna. </p>
+                    <h4><b>Airport event</b></h4>
                 </div>
                 </div>
-                     <div class="col-lg-8">
+                     <div class="col-md-8 col-lg-8">
                       <div class="row">
                         <div class="event_sub">
-                            <div class="col-lg-4">
+                            <div class="col-xs-4 col-md-4 col-lg-4 event-mob-img">
                       <div class="event_section">
-                        <img src="images/event.jpg" width="230px"> 
+                        <img src="images/l (1).jpg" width="230px"> 
                         <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
                       </div>
                         <div class="event_section">
-                        <img src="images/event.jpg" width="230px"> 
+                        <img src="images/l (2).jpg" width="230px"> 
                           <p> <i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
                       </div>
                     </div>   
-                     <div class="col-lg-4">
+                     <div class="col-xs-4 col-md-4 col-lg-4 event-mob-img">
                       <div class="event_section">
-                        <img src="images/event.jpg" width="230px">
+                        <img src="images/l (3).jpg" width="230px">
                           <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p> 
                       </div>
                         <div class="event_section">
-                        <img src="images/event.jpg" width="230px"> 
+                        <img src="images/l (4).jpg" width="230px"> 
                           <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
                       </div>
                     </div>   
-                     <div class="col-lg-4">
+                     <div class="col-xs-4 col-md-4 col-lg-4 event-mob-img">
                       <div class="event_section">
-                        <img src="images/event.jpg" width="230px"> 
+                        <img src="images/l (7).jpg" width="230px"> 
                           <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
                       </div>
                         <div class="event_section">
-                        <img src="images/event.jpg" width="230px"> 
+                        <img src="images/l (8).jpg" width="230px"> 
                           <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
                       </div>
                     </div>   
                   </div>
                 </div>
+
                      </div>
-              </div>
+              </div>        
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+        <div class="col-lg-12">
+                <div class="col-md-4 col-lg-4">
+
+                    <div class="section3_sub">
+
+                    <h1 style="color: #e2af20;">RECENT</h1>
+                    <h1 >EVENTS</h1>
+                    <h1></h1>
+                    <h4><b>Airport event</b></h4>
+                </div>
+                </div>
+                     <div class="col-md-8 col-lg-8">
+                      <div class="row">
+                        <div class="event_sub">
+                            <div class="col-xs-4 col-md-4 col-lg-4  event-mob-img">
+                      <div class="event_section">
+                        <img src="images/l (1).jpg" width="230px"> 
+                        <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                        <div class="event_section">
+                        <img src="images/l (2).jpg" width="230px"> 
+                          <p> <i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                    </div>   
+                     <div class="col-xs-4 col-md-4 col-lg-4  event-mob-img">
+                      <div class="event_section">
+                        <img src="images/l (3).jpg" width="230px">
+                          <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p> 
+                      </div>
+                        <div class="event_section">
+                        <img src="images/l (4).jpg" width="230px"> 
+                          <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                    </div>   
+                     <div class="col-xs-4 col-md-4  col-lg-4  event-mob-img">
+                      <div class="event_section">
+                        <img src="images/l (5).jpg" width="230px"> 
+                          <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                        <div class="event_section">
+                        <img src="images/l (8).jpg" width="230px"> 
+                          <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                    </div>   
+                  </div>
+                </div>
+
+                     </div>
+              </div>        
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+        <div class="col-lg-12">
+                <div class="col-md-4 col-lg-4">
+
+                    <div class="section3_sub">
+
+                    <h1 style="color: #e2af20;">RECENT</h1>
+                    <h1 >EVENTS</h1>
+                    <h1></h1>
+                    <h4><b>Airport event</b></h4>
+                </div>
+                </div>
+                     <div class="col-md-8 col-lg-8">
+                      <div class="row">
+                        <div class="event_sub">
+                            <div class="col-xs-4 col-md-4 col-lg-4  event-mob-img">
+                      <div class="event_section">
+                        <img src="images/l (1).jpg" width="230px"> 
+                        <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                        <div class="event_section">
+                        <img src="images/l (2).jpg" width="230px"> 
+                          <p> <i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                    </div>   
+                     <div class="col-xs-4 col-md-4 col-lg-4  event-mob-img">
+                      <div class="event_section">
+                        <img src="images/l (3).jpg" width="230px">
+                          <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p> 
+                      </div>
+                        <div class="event_section">
+                        <img src="images/l (4).jpg" width="230px"> 
+                          <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                    </div>   
+                     <div class="col-xs-4 col-md-4  col-lg-4  event-mob-img">
+                      <div class="event_section">
+                        <img src="images/l (5).jpg" width="230px"> 
+                          <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                        <div class="event_section">
+                        <img src="images/l (8).jpg" width="230px"> 
+                          <p><i class="fa fa-search-plus fa-2x"></i><br>iaculis accumsan urna. </p>
+                      </div>
+                    </div>   
+                  </div>
+                </div>
+
+                     </div>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+      </div>                          
+    </div>
+  </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+      <div class="row">
+          <h1>Portfolia</h1>
+        <div class="col-lg-12">
+          <div class="img">
+          <img src="images/gallery/g (1).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (2).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (3).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (4).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (5).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (6).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (7).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (8).jpg">
+        </div>
+           <div class="img">
+          <img src="images/gallery/g (9).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (10).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (11).jpg">
+        </div>
+         <div class="img">
+          <img src="images/gallery/g (12).jpg">
         </div>
       </div>
+    </div>
+</div>
     </section>
     <section class="section2">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="col-lg-7">
+                <div class="col-md-7 col-lg-7">
 
                     <div class="section2_sub">
 
@@ -249,7 +402,7 @@ consequat orci, iaculis accumsan urna. </p>
                             
                         </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-md-5 col-lg-5">
                       <div class="hide_text2">
                         <h1>CONNECTING THINGS</h1>
                             
@@ -262,11 +415,101 @@ consequat orci, iaculis accumsan urna. </p>
         </div>
     </div> 
 </section>
-<section class="section3 section7">
+<section id="testimonial" class="test">
+<div class="container">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+    <h2>Client Testimonial </h2>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-offset-2 col-md-8'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="images/logo.png" style="width: 100px;height:100px;">
+                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                </div>
+                <div class="col-sm-9">
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                  <small>PVR Cinemas</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="images/logo.png" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Chennai Airport</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="images/logo.png" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>                          
+    </div>
+  </div>
+</div>
+</section>
+<section id="social">
+  <div class="container">
+  <div class="row">
+    <h1>Social</h1>
+    <div class="col-xs-6 col-lg-6 social-in">
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fzeroartisticdesign0&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="440" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      
+    </div>
+    <div class="col-xs-6 col-lg-6 social-in">
+      <a class="twitter-timeline" href="https://twitter.com/ZeroArtistic?ref_src=twsrc%5Etfw">Tweets by ZeroArtistic</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      
+    </div>
+  </div>
+
+</div>
+  
+</section>
+<section class="section3 section7" id="contact">
         <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="col-lg-4">
+                <div class="col-md-4 col-lg-4">
 
                     <div class="section3_sub">
 
@@ -283,11 +526,11 @@ Pallavaram-600 043
   <li><i class="fa fa-envelope"></i> zeroartisticdesigns0@gmail.com</li>
   <li><i class="fa fa-phone"></i> +91 80159 68690, +91 81229 47981</li>
   <br>
-   <li class="soc-link text-center"><i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-youtube"></i></li>
+   <li class="soc-link text-center"><a href="https://www.facebook.com/ZeroArtisticDesign0/" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/zeroartistic" target="_blank"><i class="fa fa-twitter"></i></a> <a href="https://www.youtube.com/channel/UC68IAMQdTXaut11BdxMuZhg" target="_blank"><i class="fa fa-youtube"></i></a></li>
 </ul>
                 </div>
                 </div>
-                <div class="col-lg-8">  
+                <div class="col-md-8 col-lg-8">  
                   <div class="sec-form">
                    <form action="/action_page.php" id="contact-fo">
                       <div class="form-group">
@@ -324,7 +567,7 @@ Pallavaram-600 043
         <p>© zeroartistic.in|All rights Reserved</p>    
            </div>       
            <div class="col-xs-6 col-lg-6 text-right">        
-            <a href="">by <img src="images/vklogo.png" alt="Vkdesign" width="50" height="40"></a>       </div> </div>
+            <a href="">by <img src="images/logo.png" alt="Vkdesign" width="50" height="40"></a>       </div> </div>
     </div> 
     
 </section>
